@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Simple CRDT continuous sequence works 1`] = `
+Array [
+  Object {
+    "id": 1,
+    "name": "Groceries",
+  },
+  Object {
+    "id": 3,
+    "index": Array [
+      1,
+      3,
+    ],
+    "name": "Admin",
+  },
+  Object {
+    "id": 2,
+    "name": "Cleaning",
+  },
+]
+`;
