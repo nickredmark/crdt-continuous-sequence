@@ -1,5 +1,11 @@
 # CRDT Continuous Sequence
 
+## Install
+
+```
+npm i -s crdt-continuous-sequence
+```
+
 ## Usage with plain array
 
 ```js
