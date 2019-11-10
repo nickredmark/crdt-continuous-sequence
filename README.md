@@ -22,8 +22,8 @@ const todos = [
     }
 ]
 
-
-cs.moveBetween(todos[2], todos[0], todos[1]);
+// move 'Admin' between 'Groceries' and 'Cleaning'
+cs.move(todos[2], todos[0], todos[1]);
 cs.sort(todos);
 console.log(todos);
 ```
@@ -58,5 +58,6 @@ gun.get('todos').map().on(todo => {
 
 // Later
 
-cs.moveBetween(todos[3], todos[0], todos[1])
+// move 'Admin' between 'Groceries' and 'Cleaning'
+cs.move(todos[3], todos[0], todos[1])
 ```
