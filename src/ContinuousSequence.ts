@@ -62,12 +62,16 @@ export class ContinuousSequence {
     return a < b ? -1 : 1;
   };
 
-  getId = (element: any) =>
+  getId = (element: any): string =>
     typeof element === "string" ? element : element.id;
 
-  getIndex = (element: any) => {
-    if (typeof element === "string") {
+  getIndex = (element: any): string[] => {
+    if (Array.isArray(element)) {
       return element;
+    }
+
+    if (typeof element === "string") {
+      return [element];
     }
 
     if (element.index) {
